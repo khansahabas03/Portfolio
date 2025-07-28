@@ -1,12 +1,54 @@
-# React + Vite
+# 🚀 3D Personal Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a **3D-animated developer portfolio** built using **React.js** and **Vite**, featuring interactive components, animated particles, rotating image sliders, theme toggling (light/dark), and a responsive design.
 
-Currently, two official plugins are available:
+## 🌐 Live Demo
+[Visit Portfolio](https://portfolio-oaal.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 📸 Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ⚛️ Built with **React.js** and **Vite**
+- 🌙 Light/Dark theme toggle with persistence
+- 🔁 **3D rotating image carousel** on the home page
+- ✨ Animated background using `tsparticles`
+- 🔗 Social Media & Resume Download buttons
+- 📄 Sections:
+  - Home
+  - About Me
+  - Resume / Experience
+  - Skills
+  - Projects
+  - Contact Form with validation and toast feedback
+- 📱 Fully responsive across mobile, tablet, and desktop
+
+---
+
+## 🛠️ Technologies Used
+
+- **React.js** + **Vite**
+- **SCSS** (Modular styling)
+- **Framer Motion** (for animation)
+- **React Icons**
+- **tsparticles** (for particle background)
+
+---
+
+## 📂 Folder Structure
+
+
+portfolio3d/
+│
+├── public/                # Static files and assets
+├── src/
+│   ├── assets/            # Images & icons
+│   ├── components/        # Reusable components like Navbar, Footer, ThemeToggle
+│   ├── containers/        # Pages: Home, About, Resume, Skills, Projects, Contact
+│   ├── utils/             # Particle config and theme context
+│   ├── App.jsx            # Main app component
+│   └── main.jsx           # Entry point
+├── .gitignore
+├── package.json
+├── vite.config.js
+└── README.md             
