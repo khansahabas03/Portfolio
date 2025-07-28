@@ -1,0 +1,133 @@
+.contact {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--yellow-theme-background-color);
+  color: var(--yellow-theme-text-color);
+  height: 100%;
+  padding-bottom: 60px;
+
+  &__form {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 30px;
+
+    input,
+    textarea {
+      background-color: var(--yellow-theme-input-background);
+      color: var(--yellow-theme-sub-text-color);
+      border: 1.5px solid var(--yellow-theme-main-color);
+      padding: 10px 15px;
+      border-radius: 5px;
+      font-size: 16px;
+      transition: 0.3s;
+
+      &:focus {
+        outline: none;
+        border-color: var(--yellow-theme-main-color);
+        background-color: var(--yellow-theme-input-focus-background);
+      }
+    }
+
+    .vertical-timeline {
+      max-width: 600px;
+      margin: 0 auto;
+    }
+  }
+}
+
+// Global styles for form elements inside timeline
+.vertical-timeline-element-content {
+
+  input,
+  textarea {
+    width: 100%;
+    background-color: var(--yellow-theme-input-background);
+    color: var(--yellow-theme-sub-text-color);
+    border: 1.5px solid var(--yellow-theme-main-color);
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s;
+
+    &:focus {
+      outline: none;
+      border-color: var(--yellow-theme-main-color);
+      background-color: var(--yellow-theme-input-focus-background);
+    }
+  }
+
+  button {
+    padding: 12px;
+    background-color: var(--yellow-theme-main-color);
+    color: #000;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+
+    &:hover {
+      background-color: #000;
+      color: var(--yellow-theme-main-color);
+      border: 1px solid var(--yellow-theme-main-color);
+    }
+  }
+}
+
+.contact__success {
+  color: var(--yellow-theme-main-color);
+  margin-top: 10px;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  opacity: 0;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+
+body.light-theme .contact__form input,
+body.light-theme .contact__form textarea {
+  background-color: #fff;
+  color: #000;
+  border-color: #111;
+
+  &:focus {
+    background-color: #f0f0f0;
+    color: #000;
+    border-color: #111;
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .contact {
+    padding: 1rem;
+
+    &__form {
+      .vertical-timeline-element-content {
+
+        input,
+        textarea {
+          font-size: 0.95rem;
+          padding: 10px;
+        }
+
+        button {
+          font-size: 0.95rem;
+          padding: 10px;
+        }
+      }
+
+      .contact__success {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}

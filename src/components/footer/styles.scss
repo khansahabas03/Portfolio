@@ -1,0 +1,154 @@
+.footer {
+    position: relative;
+    width: 100%;
+    background-color: #111;
+    padding: 15px 10px;
+    color: #ffffff;
+    z-index: 1;
+    color: var(--yellow-theme-text-color);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    &__title {
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+        color: var(--yellow-theme-main-color);
+    }
+
+    &__icons {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-bottom: 10px;
+
+        a {
+            display: inline-block;
+
+            img {
+                width: 30px;
+                height: 30px;
+                transition: transform 0.3s ease;
+            }
+
+            &:hover img {
+                transform: scale(1.2);
+            }
+        }
+    }
+
+    &__actions {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 8px;
+        gap: 5px;
+
+        .footer__btn {
+            padding: 8px 16px;
+            font-size: 1rem;
+            background-color: transparent;
+            border: 1.5px solid var(--yellow-theme-main-color);
+            color: var(--yellow-theme-main-color);
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background 0.3s;
+
+            &:hover {
+                background-color: var(--yellow-theme-main-color);
+                color: #000;
+            }
+        }
+    }
+
+    &__copyright {
+        margin-top: 15px;
+        font-size: 1rem;
+        color: #aaa;
+        color: var(--yellow-theme-main-color);
+    }
+}
+
+body.light-theme .footer__icons img {
+    filter: invert(1);
+}
+
+
+
+body.light-theme {
+    background-color: #f8f8f8;
+    color: #111;
+}
+
+body.light-theme .footer {
+    background-color: #eee;
+    color: #000;
+}
+
+body.light-theme .footer__btn {
+    border-color: #111;
+    color: #111;
+}
+
+body.light-theme .footer__btn:hover {
+    background-color: #111;
+    color: #fff;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .footer {
+        padding: 20px 10px;
+        text-align: center;
+
+        &__title {
+            font-size: 1.4rem;
+        }
+
+        &__icons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 10px;
+
+            a img {
+                width: 28px;
+                height: 28px;
+            }
+        }
+
+        &__actions {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+            .footer__btn {
+                width: 80%;
+                font-size: 1rem;
+                padding: 10px;
+            }
+        }
+
+        &__copyright {
+            font-size: 0.85rem;
+            margin-top: 12px;
+            color: #aaa;
+        }
+    }
+}

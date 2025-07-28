@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+
+:root {
+    --yellow-theme-background-color: #1d1d1d;
+    --yellow-theme-main-color: #ffdd40;
+    --yellow-theme-sub-text-color: #ffffff;
+    --yellow-theme-text-color: #fff;
+    --yellow-theme-nav-background-color: #181818;
+    --yellow-theme-input-background: #1a1a1a;
+    --yellow-theme-input-focus-background: #111;
+}
+
+
+body.light-theme {
+    --yellow-theme-background-color: #f9f9f9;
+    --yellow-theme-text-color: #111;
+    --yellow-theme-sub-text-color: #333;
+    --yellow-theme-main-color: #ffbb00;
+    --yellow-theme-nav-background-color: #ddd;
+}
+
+
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+html {
+    font-size: 62.5%;
+    height: 100%;
+}
+
+body {
+    background: var(--yellow-theme-background-color);
+    height: 100%;
+}
+
+#root {
+    height: 100%;
+}
