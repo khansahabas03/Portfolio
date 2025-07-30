@@ -17,19 +17,24 @@ const Contact = () => {
         setFormData((prev) => ({ ...prev, [name]: value }));
     };
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-        console.log("Form submitted:", formData);
-        setSubmitted(true);
-        setTimeout(() => setSubmitted(false), 4000);
-        setFormData({ name: '', email: '', message: '' });
-    };
+    // const handleSubmit = (e) => {
+    //     e.preventDefault();
+    //     console.log("Form submitted:", formData);
+    //     setSubmitted(true);
+    //     setTimeout(() => setSubmitted(false), 4000);
+    //     setFormData({ name: '', email: '', message: '' });
+    // };
 
     return (
         <section id="contact" className="contact">
             <PageHeaderContent headerText="Contact" icon={<FaPaperPlane size={40} />} />
 
-            <form className="contact__form" onSubmit={handleSubmit}>
+            <form action="https://formsubmit.co/khansahabas07@gmail.com" method="POST" className="contact__form" >
+                {/* <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="_next" value="https://yourwebsite.com/thank-you" /> */}
+
+
+
                 <VerticalTimeline layout="1-column" lineColor="var(--yellow-theme-main-color)">
                     <VerticalTimelineElement
                         iconStyle={{
@@ -95,6 +100,9 @@ const Contact = () => {
                             value={formData.message}
                             onChange={handleChange}
                         ></textarea>
+                        <input type="hidden" name="_next" value="https://portfolio-oaal.vercel.app/thank-you" />
+                        <input type="hidden" name="_captcha" value="false" />
+                        <input type="text" name="_honey" style={{ display: "none" }} />
                     </VerticalTimelineElement>
 
                     <VerticalTimelineElement
@@ -111,9 +119,9 @@ const Contact = () => {
                         }}
                     >
                         <button type="submit">Send Message</button>
-                        {submitted && (
+                        {/* {submitted && (
                             <p className="contact__success">✅ Message sent successfully!</p>
-                        )}
+                        )} */}
                     </VerticalTimelineElement>
                 </VerticalTimeline>
             </form>

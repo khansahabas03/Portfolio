@@ -16,6 +16,7 @@ import Footer from './components/footer';
 import ScrollToTop from './components/ScrollToTop';
 import particles from './utils/particles';
 import Spinner from './components/Spinner';
+import ThankYou from './components/ThankYou';
 
 function App() {
   const location = useLocation();
@@ -60,6 +61,7 @@ function App() {
           <Route path="/skills" element={<Skills />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/thank-you" element={<ThankYou />} />
         </Routes>
 
         <Footer />
