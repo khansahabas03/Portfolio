@@ -11,23 +11,17 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  overflow-x: hidden;
+  //overflow-x: hidden;
 
   &__main-page-content {
+    // overflow-y: auto;
+    // height: 100vh;
+
     flex: 1;
     display: flex;
     flex-direction: column;
 
   }
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  margin: 0;
-  padding: 0;
 }
 
 @media only screen and (max-width: 768px) {
@@ -41,6 +35,10 @@ html {
   margin: 0;
   padding: 0;
   width: 100%;
-  overflow-x: hidden;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+  height: auto;
+  overflow-y: auto;
+  //overflow-y: hidden;
+  //overflow-x: hidden;
 }

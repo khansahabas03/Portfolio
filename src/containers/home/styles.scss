@@ -1,7 +1,7 @@
 .home {
     position: relative;
     min-height: calc(100vh - 80px);
-    padding: 120px 20px 60px; // top, horizontal, bottom
+    padding: 120px 20px 60px;
     background-color: var(--yellow-theme-background-color);
     color: var(--yellow-theme-text-color);
 
@@ -13,19 +13,6 @@
     z-index: 0;
     background-color: transparent;
 
-    // &__profile-pic {
-    //     width: 220px;
-    //     height: 220px;
-    //     border-radius: 50%;
-    //     object-fit: cover;
-    //     object-position: top center;
-    //     background-color: var(--yellow-theme-background-color);
-    //     border: 3px solid var(--yellow-theme-main-color);
-    //     box-shadow: 0 0 15px var(--yellow-theme-main-color);
-    //     animation: glow 2s ease-in-out infinite alternate;
-    //     margin-bottom: 30px;
-    //     cursor: pointer;
-    // }
 
     &__text-wrapper {
         h1 {

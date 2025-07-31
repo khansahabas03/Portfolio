@@ -1,14 +1,26 @@
 .slider {
-    position: relative;
-    width: 250px;
-    height: 250px;
+    // position: relative;
+    // width: 250px;
+    // height: 250px;
+    // margin: 5px auto;
+    // transform-style: preserve-3d;
+    // animation: rotate 15s infinite linear;
+
+    // &:hover {
+    //     animation-play-state: paused;
+
+    // }
+
+    width: 80vw;
+    max-width: 300px;
+    height: 80vw;
+    max-height: 300px;
     margin: 5px auto;
     transform-style: preserve-3d;
     animation: rotate 15s infinite linear;
 
     &:hover {
         animation-play-state: paused;
-
     }
 
     .slide {
@@ -77,5 +89,11 @@
 
     to {
         transform: rotateY(360deg);
+    }
+}
+
+@media (max-width: 768px) {
+    .slider {
+        animation: rotate 25s infinite linear;
     }
 }

@@ -7,7 +7,6 @@ import {
     FaInstagram,
 } from "react-icons/fa";
 import "./styles.scss";
-//import ScrollToTop from "../ScrollToTop";
 
 const Footer = () => {
     const [darkTheme, setDarkTheme] = useState(true);
@@ -20,7 +19,7 @@ const Footer = () => {
     };
 
     const scrollToTop = () => {
-        window.scrollTo({ top: 0, behavior: "smooth" });
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     };
 
 

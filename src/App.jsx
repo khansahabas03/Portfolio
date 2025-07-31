@@ -13,10 +13,8 @@ import Contact from './containers/contact';
 
 import Navbar from './components/navbar';
 import Footer from './components/footer';
-import ScrollToTop from './components/ScrollToTop';
 import particles from './utils/particles';
 import Spinner from './components/Spinner';
-import ThankYou from './components/ThankYou';
 
 function App() {
   const location = useLocation();
@@ -49,11 +47,8 @@ function App() {
       )}
 
       <Navbar />
-      <ScrollToTop />
+
       <div className="App__main-page-content">
-
-
-
         <Routes>
           <Route index path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -61,11 +56,11 @@ function App() {
           <Route path="/skills" element={<Skills />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/thank-you" element={<ThankYou />} />
         </Routes>
 
         <Footer />
       </div>
+
     </div>
   );
 }
