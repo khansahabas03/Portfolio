@@ -35,7 +35,7 @@ const Footer = () => {
             <h3 className="footer__title">Connect With</h3>
 
             <div className="footer__icons">
-                <a href="https://www.facebook.com/profile.php?id=100009726124345" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.facebook.com/profile.php?id=100009726124345" target="_blank" rel="noopener noreferrer" >
                     <FaFacebookF />
                 </a>
                 <a href="https://www.linkedin.com/in/sahabaskhan/" target="_blank" rel="noopener noreferrer">
